@@ -1,0 +1,445 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'BitmapManager::m_pArrBitmap' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/SB15/Desktop/workSpace/Pjt_Tetris_winapi/Pjt_Tetris/Pjt_Tetris/BitmapManager.h"
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 2,
+                  "endLine": 11,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BitmapManager::{ctor}",
+                  "decoratedName": "??0BitmapManager@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "BitmapManager::m_pArrBitmap"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'BrickManager::m_iBrickRot' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/SB15/Desktop/workSpace/Pjt_Tetris_winapi/Pjt_Tetris/Pjt_Tetris/BrickManager.h"
+                },
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 1,
+                  "endLine": 55,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BrickManager::{ctor}",
+                  "decoratedName": "??0BrickManager@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "BrickManager::m_iBrickRot"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'BrickManager::m_iBrickShape' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/SB15/Desktop/workSpace/Pjt_Tetris_winapi/Pjt_Tetris/Pjt_Tetris/BrickManager.h"
+                },
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 1,
+                  "endLine": 55,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BrickManager::{ctor}",
+                  "decoratedName": "??0BrickManager@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "BrickManager::m_iBrickShape"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'BrickManager::m_iNextBrickShape' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/SB15/Desktop/workSpace/Pjt_Tetris_winapi/Pjt_Tetris/Pjt_Tetris/BrickManager.h"
+                },
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 1,
+                  "endLine": 55,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BrickManager::{ctor}",
+                  "decoratedName": "??0BrickManager@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "BrickManager::m_iNextBrickShape"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'BrickManager::m_stCurPosition' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/SB15/Desktop/workSpace/Pjt_Tetris_winapi/Pjt_Tetris/Pjt_Tetris/BrickManager.h"
+                },
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 1,
+                  "endLine": 55,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BrickManager::{ctor}",
+                  "decoratedName": "??0BrickManager@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "BrickManager::m_stCurPosition"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'GameSceneManager::m_iArrBoard' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/SB15/Desktop/workSpace/Pjt_Tetris_winapi/Pjt_Tetris/Pjt_Tetris/GameSceneManager.h"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 1,
+                  "endLine": 53,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GameSceneManager::{ctor}",
+                  "decoratedName": "??0GameSceneManager@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "GameSceneManager::m_iArrBoard"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'GameManager::m_sizeBrickImg' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/SB15/Desktop/workSpace/Pjt_Tetris_winapi/Pjt_Tetris/Pjt_Tetris/GameManager.h"
+                },
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 1,
+                  "endLine": 68,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GameManager::{ctor}",
+                  "decoratedName": "??0GameManager@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "GameManager::m_sizeBrickImg"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'GameManager::m_iInterval' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/SB15/Desktop/workSpace/Pjt_Tetris_winapi/Pjt_Tetris/Pjt_Tetris/GameManager.h"
+                },
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 1,
+                  "endLine": 68,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GameManager::{ctor}",
+                  "decoratedName": "??0GameManager@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "GameManager::m_iInterval"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'GameManager::m_iBrickCount' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/SB15/Desktop/workSpace/Pjt_Tetris_winapi/Pjt_Tetris/Pjt_Tetris/GameManager.h"
+                },
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 1,
+                  "endLine": 68,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GameManager::{ctor}",
+                  "decoratedName": "??0GameManager@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "GameManager::m_iBrickCount"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'GameManager::m_iScore' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/SB15/Desktop/workSpace/Pjt_Tetris_winapi/Pjt_Tetris/Pjt_Tetris/GameManager.h"
+                },
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 1,
+                  "endLine": 68,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GameManager::{ctor}",
+                  "decoratedName": "??0GameManager@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "GameManager::m_iScore"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'GameManager::m_eGAMESTATUS' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/SB15/Desktop/workSpace/Pjt_Tetris_winapi/Pjt_Tetris/Pjt_Tetris/GameManager.h"
+                },
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 1,
+                  "endLine": 68,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GameManager::{ctor}",
+                  "decoratedName": "??0GameManager@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "GameManager::m_eGAMESTATUS"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.32.31332.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/SB15/Desktop/workSpace/Pjt_Tetris_winapi/Pjt_Tetris/Pjt_Tetris/BitmapManager.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "0516ae27e37efdfba2beee81c424ed02e7923c291efebf76ce432a5d432a0946"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/SB15/Desktop/workSpace/Pjt_Tetris_winapi/Pjt_Tetris/Pjt_Tetris/BrickManager.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "928a1157201fe143b07466fecaeeff640209c5a53ce556dbcede8cc8af947db7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/SB15/Desktop/workSpace/Pjt_Tetris_winapi/Pjt_Tetris/Pjt_Tetris/GameSceneManager.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "326b47495d8ad1ee14ed2238458133ea0c33f34ba3cdd03aeb64ede7a338cb84"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/SB15/Desktop/workSpace/Pjt_Tetris_winapi/Pjt_Tetris/Pjt_Tetris/GameManager.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "4a9f89c84f742f6e8f60fc7471a40c4a551457cd3bb9890738396d637201b405"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/sb15/desktop/workspace/pjt_tetris_winapi/pjt_tetris/pjt_tetris/gamescenemanager.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "2ed606e2c77b142cd4be23836c35f9ce1cf7d20c394c0fffc5b17c615cb7fc9f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/sb15/desktop/workspace/pjt_tetris_winapi/pjt_tetris/pjt_tetris/singletone.h"
+          },
+          "hashes": {
+            "sha-256": "6bfe0837a764cf8de01c8e33840f9223170df7c853c876124a4e9c52c091e37a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/sb15/desktop/workspace/pjt_tetris_winapi/pjt_tetris/pjt_tetris/bitmap.h"
+          },
+          "hashes": {
+            "sha-256": "0a21012672a362b4ef035c853f2cb0e2b46efb8ea3b2e6eb96c1a3ad94c922ec"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/sb15/desktop/workspace/pjt_tetris_winapi/pjt_tetris/pjt_tetris/resource.h"
+          },
+          "hashes": {
+            "sha-256": "925a18e2b9efaf16900e708f5c8ef1a9cbeb567cc9ff349773becd05e25c6189"
+          }
+        }
+      ]
+    }
+  ]
+}

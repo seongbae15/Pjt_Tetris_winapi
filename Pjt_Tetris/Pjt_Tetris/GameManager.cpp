@@ -137,7 +137,6 @@ void GameManager::Draw(HWND hWnd, HDC hdc)
 
 void GameManager::Draw(HDC hdc)
 {
-	HDC BackMemDC = CreateCompatibleDC(hdc);
 	//Map, 고정된 Brick 그리기
 	DrawSetBrick(hdc);
 	//현재 내려오는 블록 그리기.
@@ -207,7 +206,7 @@ void GameManager::DrawUserInterface(HDC hdc)
 		}
 	}
 
-	lstrcpy(str, TEXT("Tetris Ver1.0   "));
+	lstrcpy(str, TEXT("Tetris Ver1.1   "));
 	TextOut(hdc, (MAP_WIDTH + 4) * m_sizeBrickImg.cx, 30, str, lstrlen(str));
 	wsprintf(str, TEXT("점수: %d      "), m_iScore);
 	TextOut(hdc, (MAP_WIDTH + 4) * m_sizeBrickImg.cx, 60, str, lstrlen(str));

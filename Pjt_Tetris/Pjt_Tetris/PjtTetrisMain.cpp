@@ -29,7 +29,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	RegisterClass(&WndClass);
 
 	hWnd = CreateWindow(lpszClass, lpszClass, WS_CAPTION|WS_SYSMENU|WS_MINIMIZEBOX,
-		CW_USEDEFAULT, CW_USEDEFAULT, 0, 0, NULL, (HMENU)NULL, hInstance, NULL);
+		CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, NULL, (HMENU)NULL, hInstance, NULL);
 	ShowWindow(hWnd, nCmdShow);
 
 	HACCEL hAccel = LoadAccelerators(hInstance, MAKEINTRESOURCE(IDR_ACCELERATOR1));
@@ -54,16 +54,12 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	return (int)Message.wParam;
 }
 
-
-//const int iBrickPixelSize = 24;
 const int g_iAddWindowWidth = 12;
 const int g_iAddWindowHeight = 2;
 
 LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 {
-	//나중에 수정할 부분.
 	RECT rectWindow;
-	int iTransformRot;
 	HDC hdc;
 	PAINTSTRUCT ps;
 
@@ -80,7 +76,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 		SIZE sizePixel = GameManager::GetInstance()->GetImgSize();
 		SetRect(&rectWindow, 0, 0, (MAP_WIDTH + g_iAddWindowWidth) * sizePixel.cx, (MAP_HEIGHT + g_iAddWindowHeight) * sizePixel.cy);
 		AdjustWindowRect(&rectWindow, WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX, TRUE);
-		SetWindowPos(hWndMain, NULL, 0, 0, rectWindow.right - rectWindow.left, rectWindow.bottom - rectWindow.top,SWP_NOMOVE|SWP_NOZORDER);
+		SetWindowPos(hWndMain, NULL, 0, 0, rectWindow.right - rectWindow.left, rectWindow.bottom - rectWindow.top,SWP_NOMOVE| SWP_NOZORDER| SWP_SHOWWINDOW);
 		return 0;
 	case WM_COMMAND:
 		switch (LOWORD(wParam))
