@@ -48,6 +48,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 
 		}
 	}
+	
 	GameManager::GetInstance()->DestroyInstance();
 
 	return (int)Message.wParam;

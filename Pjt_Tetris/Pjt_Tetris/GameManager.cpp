@@ -197,7 +197,4 @@ void GameManager::Release()
 {
 	//Release bitmaps
 	m_cBitmapManager.Release();
-
-	//Release singleton memory
-	DestroyInstance();
 }

@@ -23,7 +23,7 @@ void BitmapManager::Release()
 	for (int i = 0; i < BITMAP_COUNT; i++)
 	{
 		delete m_pArrBitmap[i];
-
+		m_pArrBitmap[i] = nullptr;
 	}
 }
 
@@ -31,7 +31,8 @@ BitmapManager::~BitmapManager()
 {
 	for (int i = 0; i < BITMAP_COUNT; i++)
 	{
-		delete m_pArrBitmap[i];
+		if (m_pArrBitmap[i] != nullptr)
+			delete m_pArrBitmap[i];
 
 	}
 
