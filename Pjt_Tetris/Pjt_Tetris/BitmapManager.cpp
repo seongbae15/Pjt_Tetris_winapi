@@ -14,7 +14,7 @@ void BitmapManager::Init(HWND hWnd, HINSTANCE hInst)
 }
 
 void BitmapManager::Draw(HDC hdc, int x, int y, int bitmapIndex)
-{
+{	
 	m_pArrBitmap[bitmapIndex]->Draw(hdc, x, y);
 }
 

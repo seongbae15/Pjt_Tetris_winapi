@@ -112,13 +112,36 @@ void GameManager::InputGameKey(HWND hWnd, WPARAM wParam)
 	m_cGameSceneManager.MoveBrickInScene(hWnd, wParam);
 }
 
+void GameManager::Draw(HWND hWnd, HDC hdc)
+{
+	HDC BackMemDC = CreateCompatibleDC(hdc);
+	RECT crt;
+	GetClientRect(hWnd, &crt);
+	HBITMAP TempBit, OldBitmap;
+	TempBit = CreateCompatibleBitmap(hdc, crt.right, crt.bottom);
+	OldBitmap = (HBITMAP)SelectObject(BackMemDC, TempBit);
+	FillRect(BackMemDC, &crt, GetSysColorBrush(COLOR_WINDOW));
+
+	//Map, 고정된 Brick 그리기
+	DrawSetBrick(BackMemDC);
+	//현재 내려오는 블록 그리기.
+	DrawMovingBrick(BackMemDC);
+	//UI 그리기.
+	DrawUserInterface(BackMemDC);
+	
+	BitBlt(hdc, crt.left, crt.top, crt.right, crt.bottom, BackMemDC, 0, 0, SRCCOPY);
+	SelectObject(BackMemDC, OldBitmap);
+	DeleteObject(TempBit);
+	DeleteDC(BackMemDC);
+}
+
 void GameManager::Draw(HDC hdc)
 {
+	HDC BackMemDC = CreateCompatibleDC(hdc);
 	//Map, 고정된 Brick 그리기
 	DrawSetBrick(hdc);
 	//현재 내려오는 블록 그리기.
 	DrawMovingBrick(hdc);
-
 	//UI 그리기.
 	DrawUserInterface(hdc);
 }

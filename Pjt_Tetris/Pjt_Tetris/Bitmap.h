@@ -8,6 +8,7 @@ private:
 	HBITMAP m_pBitmap;
 	HBITMAP m_pOldBitmap;
 	SIZE m_size;
+
 public:
 	Bitmap();
 	~Bitmap();

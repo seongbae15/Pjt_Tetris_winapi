@@ -40,6 +40,7 @@ public:
 	void UpdateNewBrick(HWND hWnd);
 	void CheckGameOver(HWND hWnd);
 	void InputGameKey(HWND hWnd, WPARAM wParam);
+	void Draw(HWND hWnd, HDC hdc);
 	void Draw(HDC hdc);
 	void DrawSetBrick(HDC hdc);
 	void DrawMovingBrick(HDC hdc);

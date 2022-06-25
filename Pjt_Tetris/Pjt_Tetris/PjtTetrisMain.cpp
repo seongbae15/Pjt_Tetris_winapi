@@ -120,7 +120,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 		return 0;
 	case WM_PAINT:
 		hdc = BeginPaint(hWndMain, &ps);
-		GameManager::GetInstance()->Draw(hdc);
+		GameManager::GetInstance()->Draw(hWndMain, hdc);
 		EndPaint(hWndMain, &ps);
 		return 0;
 	case WM_DESTROY:

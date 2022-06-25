@@ -1,5 +1,4 @@
-﻿  BitmapManager.cpp
-  GameManager.cpp
+﻿  GameManager.cpp
   GameSceneManager.cpp
   PjtTetrisMain.cpp
 C:\Users\SB15\Desktop\workSpace\Pjt_Tetris_winapi\Pjt_Tetris\Pjt_Tetris\PjtTetrisMain.cpp(66,6): warning C4101: 'iTransformRot' :참조되지 않은 지역 변수입니다.
