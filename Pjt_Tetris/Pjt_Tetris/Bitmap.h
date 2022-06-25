@@ -13,6 +13,7 @@ public:
 	~Bitmap();
 	//void Init(HDC hdc, HINSTANCE hInst, int id);
 	void Init(HDC hdc, HINSTANCE hInst, int id);
+	void Init(HDC hdc, HINSTANCE hInst, LPCWSTR fileName);
 	void Draw(HDC hdc, int x, int y);
 	inline SIZE GetBitmapSize()
 	{

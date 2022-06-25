@@ -6,6 +6,18 @@ Bitmap::Bitmap()
 {
 }
 
+void Bitmap::Init(HDC hdc, HINSTANCE hInst, LPCWSTR fileName)
+{
+	m_pBitmap = (HBITMAP)LoadImage(NULL, fileName, IMAGE_BITMAP, 0, 0, LR_CREATEDIBSECTION | LR_DEFAULTSIZE | LR_LOADFROMFILE);
+	//m_pBitmap = LoadBitmap(hInst, MAKEINTRESOURCE(IDB_BITMAP1 + id));
+
+	BITMAP bitmapInfo;
+	GetObject(m_pBitmap, sizeof(bitmapInfo), &bitmapInfo);
+	m_size.cx = bitmapInfo.bmWidth;
+	m_size.cy = bitmapInfo.bmHeight;
+}
+
+
 void Bitmap::Init(HDC hdc, HINSTANCE hInst, int id)
 {
 	m_pBitmap = LoadBitmap(hInst, MAKEINTRESOURCE(IDB_BITMAP1 + id));
