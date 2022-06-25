@@ -206,7 +206,7 @@ void GameManager::DrawUserInterface(HDC hdc)
 		}
 	}
 
-	lstrcpy(str, TEXT("Tetris Ver1.1   "));
+	lstrcpy(str, TEXT("Tetris Ver1.1"));
 	TextOut(hdc, (MAP_WIDTH + 4) * m_sizeBrickImg.cx, 30, str, lstrlen(str));
 	wsprintf(str, TEXT("Á¡¼ö: %d      "), m_iScore);
 	TextOut(hdc, (MAP_WIDTH + 4) * m_sizeBrickImg.cx, 60, str, lstrlen(str));
