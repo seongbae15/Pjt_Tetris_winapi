@@ -6,10 +6,10 @@ void BitmapManager::Init(HWND hWnd, HINSTANCE hInst)
 	for (int i = 0; i < BITMAP_COUNT; i++)
 	{
 		m_pArrBitmap[i] = new Bitmap;
-		//m_pArrBitmap[i]->Init(hdc, hInst,i);
-		TCHAR fileName[256];
-		wsprintf(fileName, L"Resources//bitmap%d.bmp", i + 1);
-		m_pArrBitmap[i]->Init(hdc, hInst, fileName);
+		m_pArrBitmap[i]->Init(hdc, hInst,i);
+		//TCHAR fileName[256];
+		//wsprintf(fileName, L"Resources//bitmap%d.bmp", i + 1);
+		//m_pArrBitmap[i]->Init(hdc, hInst, fileName);
 	}
 }
 
